@@ -68,6 +68,11 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T007 Create base models/entities that all stories depend on
 - [ ] T008 Configure error handling and logging infrastructure
 - [ ] T009 Setup environment configuration management
+- [ ] T010 [P] Setup API versioning infrastructure (if API project)
+- [ ] T011 [P] Configure OpenAPI/Swagger documentation generation (if API project)
+- [ ] T012 [P] Setup contract testing framework (if API project)
+- [ ] T013 [P] Implement structured logging and metrics collection (observability)
+- [ ] T014 [P] Setup health check endpoints per API version (if API project)
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -83,17 +88,21 @@ Examples of foundational tasks (adjust based on your project):
 
 > **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
 
-- [ ] T010 [P] [US1] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T011 [P] [US1] Integration test for [user journey] in tests/integration/test_[name].py
+- [ ] T015 [P] [US1] Contract test for [endpoint] in tests/contract/test_[name].py
+- [ ] T016 [P] [US1] Integration test for [user journey] in tests/integration/test_[name].py
+- [ ] T017 [P] [US1] OpenAPI contract validation test (if API endpoint)
 
 ### Implementation for User Story 1
 
-- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py
-- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py
-- [ ] T014 [US1] Implement [Service] in src/services/[service].py (depends on T012, T013)
-- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T016 [US1] Add validation and error handling
-- [ ] T017 [US1] Add logging for user story 1 operations
+- [ ] T018 [P] [US1] Define OpenAPI contract for [endpoint] in contracts/v[X]/[resource].yaml (if API endpoint)
+- [ ] T019 [P] [US1] Create [Entity1] model in src/models/[entity1].py
+- [ ] T020 [P] [US1] Create [Entity2] model in src/models/[entity2].py
+- [ ] T021 [US1] Implement [Service] in src/services/[service].py (depends on T019, T020)
+- [ ] T022 [US1] Implement [endpoint/feature] in src/api/v[X]/[resource].py
+- [ ] T023 [US1] Add request/response validation against contract
+- [ ] T024 [US1] Add validation and error handling
+- [ ] T025 [US1] Add structured logging for user story 1 operations (include version, endpoint, status, duration)
+- [ ] T026 [US1] Add metrics collection (request count, latency, errors)
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 

@@ -95,6 +95,16 @@
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
 
+### API Requirements *(include if feature involves REST endpoints)*
+
+- **API-001**: API version for endpoints [e.g., "v1" for new features, "v2" if breaking changes]
+- **API-002**: Endpoints follow versioning scheme [e.g., "/api/v1/resource"]
+- **API-003**: Breaking changes that require version increment [list specific changes, e.g., "removed field X", "changed type of field Y"]
+- **API-004**: Backward compatible changes within version [list additive changes, e.g., "added optional field Z"]
+- **API-005**: OpenAPI contract specification required [yes/no]
+- **API-006**: Contract tests required before implementation [yes/no]
+- **API-007**: Deprecation of old version [if applicable, specify version and timeline]
+
 ### Key Entities *(include if feature involves data)*
 
 - **[Entity 1]**: [What it represents, key attributes without implementation]
