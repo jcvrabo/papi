@@ -1,0 +1,15 @@
+linters:
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - unused
+    - gosimple
+    - gofumpt
+
+run:
+  timeout: 5m
+
+linters-settings:
+  gofumpt:
+    extra-rules: true

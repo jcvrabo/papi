@@ -33,6 +33,21 @@
 
 [Gates determined based on constitution file]
 
+**API Versioning Check** (if feature involves API endpoints):
+- [ ] API version determined (v1, v2, etc.)
+- [ ] Breaking vs. non-breaking changes identified
+- [ ] If breaking: new version justification documented
+- [ ] OpenAPI contract specification planned
+- [ ] Contract tests planned before implementation
+- [ ] Backward compatibility strategy defined (if same version)
+- [ ] Deprecation plan (if retiring old version)
+
+**Common Constitution Violations to Avoid**:
+- [ ] Breaking changes without version increment
+- [ ] Implementation before tests written
+- [ ] Missing API contracts/OpenAPI specs
+- [ ] Insufficient observability (logging, metrics, tracing)
+
 ## Project Structure
 
 ### Documentation (this feature)

@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: papi
+      POSTGRES_PASSWORD: papi
+      POSTGRES_DB: papi
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  uaa-mock:
+    image: ghcr.io/navikt/mock-oauth2-server:2.1.0
+    ports:
+      - "8888:8888"
+    environment:
+      SERVER_PORT: "8888"
+      JSON_CONFIG: >
+        {
+          "interactiveLogin": true,
+          "tokenCallbacks": []
+        }
+
+volumes:
+  pgdata:
